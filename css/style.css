@@ -1,0 +1,132 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Serif:regular,700&display=swap&subset=cyrillic-ext");
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+img {
+	vertical-align: top;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	font-size: 16px;
+	/* по умолчанию */
+}
+
+body {
+	line-height: 1;
+	font-family: 'IBM Plex Serif', serif;
+	font-size: 18px;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	padding: 30px 0;
+}
+
+/* ------------------------------ */
+
+h1 {
+	font-size: 34px;
+	font-weight: 700;
+	text-align: center;
+	margin: 0px 0px 30px 0px;
+}
+
+.lesson {}
+
+.lesson__container {
+	max-width: 1020px;
+	margin: 0 auto;
+	text-align: justify;
+}
+
+.lesson__container p:hover:nth-child(odd) {
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.lesson__container p:hover:nth-child(even) {
+	box-shadow: 0 0 5px rgba(194, 4, 4, 0.3);
+}
+
+.lesson__text {
+	margin: 0px 0px 15px 0px;
+	text-indent: 30px;
+}
+
+.lesson__image {
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.lesson__image-title {
+	text-align: center;
+	margin: 0px 0px 20px 0px;
+}
+
+.lesson__image-text {
+	margin: 0px 0px 30px 0px;
+	counter-reset: item;
+}
+
+.lesson__image-text li::before {
+	counter-increment: item;
+	content: counter(item) ")";
+	display: inline-block;
+	color: green;
+	vertical-align: top;
+	margin: 0px 10px 0px 0px;
+}
+
+.lesson__image-text li:hover,
+.lesson__image-text li:hover::before {
+	color: red;
+}
+
+.lesson__image-text li:not(:last-child) {
+	margin: 0px 0px 7px 0px;
+}
+
+.lesson__link {
+	text-align: center;
+}
